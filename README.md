@@ -1,3 +1,5 @@
+# this is the rice of dmenu
+
 # install
 ```{sh}
 sudo make install
