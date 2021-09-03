@@ -1,2 +1,22 @@
 #!/bin/sh
-dmenu_path | dmenu -c -l 20 "$@" | ${SHELL:-"/bin/sh"} &
+
+declare -a program=(
+pass-dm
+shut-dm
+search
+ntu-web
+youtube
+google-web
+python-doc
+R-doc
+reading-list
+netflix
+tutanota
+kaggle
+github
+gitlab
+oneDrive
+nitrogen
+)
+
+printf "%s\n" "${program[@]}" | dmenu -c -l 20 | ${SHELL:-"/bin/sh"} &
