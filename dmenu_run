@@ -19,4 +19,4 @@ oneDrive
 nitrogen
 )
 
-printf "%s\n" "${program[@]}" | dmenu -c -l 20 | ${SHELL:-"/bin/sh"} &
+printf "%s\n" "${program[@]}" | dmenu | ${SHELL:-"/bin/sh"} &

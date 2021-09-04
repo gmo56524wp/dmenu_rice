@@ -332,7 +332,7 @@ keypress(XKeyEvent *ev)
 		break;
 	}
 
-	if (ev->state & ControlMask) {
+	if (ev->state & Mod1Mask) {
 		switch(ksym) {
 		case XK_a: ksym = XK_Home;      break;
 		case XK_b: ksym = XK_Left;      break;
